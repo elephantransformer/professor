@@ -1,0 +1,216 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.professor {
+    position: relative;
+    width: 150px;
+    height: 400px;
+    animation: moveLeftRight 13s ease-in-out infinite;
+}
+
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(-800px);
+    }
+    50% {
+        transform: translateX(800px);
+    }
+    100% {
+        transform: translateX(-800px);
+    }
+}
+
+/* 머리 */
+.head {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    width: 100px;
+    height: 100px;
+    background-color: #f7d7a8; /* 피부색 */
+    border-radius: 50%;
+    border: 2px solid #e1a47a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* 머리카락 */
+.hair {
+    position: absolute;
+    top: -10px;
+    left: 28px;
+    width: 15px;
+    height: 15px;
+    background-color: #4b2e10;
+    border-radius: 50%;
+}
+
+.hair-1 {
+    position: absolute;
+    top: -10px;
+    left: 45px;
+    width: 15px;
+    height: 15px;
+    background-color: #4b2e10;
+    border-radius: 50%;
+}
+
+.hair-2 {
+    position: absolute;
+    top: -10px;
+    left: 62px;
+    width: 15px;
+    height: 15px;
+    background-color: #4b2e10;
+    border-radius: 50%;
+}
+
+/* 눈 */
+.eye {
+    position: absolute;
+    top: 35px;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+}
+.eye.left {
+    left: 25px;
+}
+.eye.right {
+    right: 25px;
+}
+
+/* 안경 */
+.glasses-l {
+    position: absolute;
+    top: 30px;
+    left: 18px;
+    width: 20px;
+    height: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.glasses-{
+    position: absolute;
+    top: 40px;
+    left: 43px;
+    width: 7px;
+    height: 0.1px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.glasses-r {
+    position: absolute;
+    top: 30px;
+    left: 55px;
+    width: 20px;
+    height: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+/* 입 */
+.mouth {
+    position: absolute;
+    bottom: 25px;
+    left: 35px;
+    width: 30px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #8d4b2d;
+}
+
+/* 몸통 */
+.body {
+    position: absolute;
+    top: 120px;
+    left: 25px;
+    width: 100px;
+    height: 120px;
+    background-color: #3b3b3b;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+
+/* 팔 (양쪽) */
+.arm-left, .arm-right {
+    position: absolute;
+    top: 130px;
+    width: 30px;
+    height: 93px;
+    background-color: #f7d7a8;
+    border-radius: 10px;
+}
+
+.arm-left {
+    left: -5px;
+}
+
+.arm-right {
+    right: -5px;
+}
+
+/* 다리 (하체) */
+.legs-left, .legs-right {
+    position: absolute;
+    top: 240px;
+    width: 40px;
+    height: 60px;
+    background-color: #3b3b3b;
+    border-radius: 10px;
+}
+
+.legs-left {
+    left: 25px;
+}
+
+.legs-right {
+    right: 25px;
+}
+
+/* 넥타이*/
+.tie {
+    position: absolute;
+    top: 5px;
+    left: 42px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid rgb(89, 138, 89);
+}
+
+/* 발 */
+.feet-left, .feet-right {
+    position: absolute;
+    top: 300px;
+    width: 40px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+.feet-left {
+    left: 25px;
+}
+
+.feet-right {
+    right: 25px;
+}
